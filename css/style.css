@@ -1,6 +1,11 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+
 /* styles here */
 /* universal selector */
-*{
+*, *::after, *::before{
   margin: 0;
   padding: 0;
   box-sizing:border-box;
@@ -44,4 +49,65 @@ body{
 }
 .hero-section >p{
   color: white;
+}
+
+
+
+/* section 3: third part */
+.login-part3{
+  
+  
+  margin-top:100px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 200px 100px;
+}
+
+
+.login-flex{
+  display: flex;
+  gap: 45px;
+  
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container, .right-container{
+  width: 517px;
+  height: 653px;
+}
+
+
+.container img{
+  width: 100%;
+}
+
+
+.container .text{
+  
+  text-align: left;
+  width: 100%;
+  padding-left: 20px;
+}
+
+
+.container h2{
+  font-size: 24px;
+  line-height: 24px;
+  font-family: 'Inter', sans-serif;
+  padding-top: 50px;
+}
+
+
+.container p{
+  text-align: left;
+  
+  width: 417px;
+  padding-top: 20px;
 }
