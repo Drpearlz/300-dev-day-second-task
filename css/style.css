@@ -1,33 +1,37 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
 /* styles here */
 /* universal selector */
-*, *::after, *::before{
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
-body{
+body {
   font-family: sans-serif;
   font-size: 14px;
   background-color: #1e1e1e;
 }
+h5 {
+  font-size: 14px;
+  line-height: 20px;
+  word-wrap: break-word;
+}
 /* section-3 login  second-part */
-.hero-container-login{
+.hero-container-login {
   display: grid;
   align-items: center;
   width: 1080px;
   margin: 0 auto;
   height: 100vh;
-  background-image:url('/assets/images/Rectangle\ 1mwelcome.png');
-  background-size:cover;
+  background-image: url("/assets/images/Rectangle\ 1mwelcome.png");
+  background-size: cover;
   background-repeat: no-repeat;
-  
 }
-.hero-button{
+.hero-button {
   background-color: white;
   color: black;
   border-radius: 4px;
@@ -36,28 +40,23 @@ body{
 
   border: none;
 }
-.hero-section{
+.hero-section {
   padding-left: 170px;
   padding-top: 70px;
-  
 }
-.hero-section h1{
+.hero-section h1 {
   font-weight: 800;
   color: white;
   font-size: 40px;
   margin-bottom: 10px;
 }
-.hero-section >p{
+.hero-section > p {
   color: white;
 }
 
-
-
 /* section 3: third part */
-.login-part3{
-  
-  
-  margin-top:100px;
+.login-part3 {
+  margin-top: 100px;
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -65,49 +64,163 @@ body{
   padding: 200px 100px;
 }
 
-
-.login-flex{
+.login-flex {
   display: flex;
   gap: 45px;
-  
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.container, .right-container{
+.container,
+.right-container {
   width: 517px;
   height: 653px;
 }
 
-
-.container img{
+.container img {
   width: 100%;
 }
 
-
-.container .text{
-  
+.container .text {
   text-align: left;
   width: 100%;
   padding-left: 20px;
 }
 
-
-.container h2{
+.container h2 {
   font-size: 24px;
   line-height: 24px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   padding-top: 50px;
 }
 
-
-.container p{
+.container p {
   text-align: left;
-  
+
   width: 417px;
   padding-top: 20px;
+}
+
+
+.containerb {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 64px;
+}
+
+.contentb {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  flex: 1 1 0;
+  max-width: 600px;
+  padding: 24px;
+  background: white;
+  box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+.card-header {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  word-wrap: break-word;
+  color: #101828;
+}
+
+.header-subheader {
+  gap: 12px;
+  align-self: stretch;
+}
+
+.header-subheader .subheading {
+  color: #6941c6;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.header-and-text {
+  align-self: stretch;
+  flex-direction: column;
+  padding-top: 12px;
+  align-items: flex-start;
+  gap: 16px;
+  display: flex;
+}
+
+.header-icon {
+  font-size: 24px;
+  display: flex;
+  line-height: 32px;
+  word-wrap: break-word;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-icon .card-header {
+  flex: 1;
+  color: #101828;
+  max-width: 296px;
+}
+
+.header-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.sup-text {
+  color: #667085;
+  font-size: 16px;
+  line-height: 24px;
+  word-wrap: break-word;
+  align-self: stretch;
+}
+
+.card-footer {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  display: flex;
+  padding-top: 64px;
+}
+
+.card-footer img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(0deg, #C7B9DA 0%, #C7B9DA 100%);
+}
+
+.card-footer div {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
 }
