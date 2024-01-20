@@ -199,6 +199,11 @@ body {
     padding: 0 2rem;
   }
 
+  .header-content {
+    width: 100%;
+    margin: 6rem 0; /* Adjust the margin as needed */
+  }
+
   .badge::after {
     content: "Pricing plans";
   }
@@ -223,15 +228,16 @@ body {
   .pagination-btn {
     margin: 4.8rem 0 6.4rem;
   }
-
-  .pagination-btn button {
-    width: 100%;
-  }
 }
 
 @media only screen and (max-width: 540px) {
   .container {
     padding: 0 1.6rem;
+  }
+
+  .header-content {
+    width: 100%;
+    margin: 4rem 0; /* Adjust the margin as needed */
   }
 
   .badge::after {
@@ -255,27 +261,9 @@ body {
     margin-top: 3.2rem;
   }
 
-  .header-content > form input {
-    border: none;
-    outline: none;
-    flex: 1;
-    font-family: inherit;
-    font-size: 1.6rem;
-    padding: 0.2rem 0;
-  }
-
-  .header-content > form input::placeholder {
-    color: var(--Gray-500, #667085);
-  }
-
   .blog-posts {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     gap: 3.2rem;
-  }
-
-  .post-title {
-    font-size: 2rem;
-    line-height: 30px;
   }
 
   .pagination-btn {
@@ -284,5 +272,6 @@ body {
 
   .pagination-btn button {
     width: 100%;
+    justify-content: center;
   }
 }
