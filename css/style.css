@@ -20,6 +20,8 @@ h5 {
   line-height: 20px;
   word-wrap: break-word;
 }
+
+
 /* section-3 login  second-part */
 .hero-container-login {
   display: grid;
@@ -27,7 +29,7 @@ h5 {
   width: 100vw;
   margin: 0 auto;
   height: 1024px;
-  background-image: url("/assets/images/Rectangle\ 1login.png");
+  background-image:url('/assets/images/Rectangle\ 1login.png');
   background-size: fill;
   background-repeat: no-repeat;
    
@@ -44,14 +46,18 @@ h5 {
   padding-left: 170px;
   padding-top: 70px;
 }
+
 .hero-section h1 {
+
   font-weight: 800;
   color: white;
-  font-size: 40px;
-  margin-bottom: 10px;
+  font-size: 82px;
+  margin-bottom: 40px;
 }
+
 .hero-section > p {
   color: white;
+  font-size: 24px;
 }
 
 @media only screen and (max-width:500px) {
@@ -78,6 +84,7 @@ h5 {
   }
 }
 /* section 3: third part */
+
 .login-part3 {
   background-color: #fff;
   display: flex;
@@ -100,17 +107,29 @@ h5 {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+
+
+.container .image{
+  background: url(/assets/images/Rectangle\ 1welcome.png);
+  background-repeat: no-repeat;
+  width: 517px;
+  height: 431px;
+  background-size: cover;
+}
+
 .container,
 .right-container {
   width: 100vw;
   height: 100vh;
   align-items: start;
 
+
 }
 
 .container img {
   width: 100%;
 }
+
 
 .container .text {
   text-align: start;
@@ -135,6 +154,70 @@ h5 {
 }
 
 
+/* responsivenes */
+@media (max-width: 375px){}
+  
+.hero-container-login{
+  background: url(/assets/images/Rectangle\ 1mobile.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 611px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+
+.text{
+  width: 200px;
+  
+}
+
+
+.text h2{
+  font-size: 24px;
+  text-align: left;
+  width: 294px;
+  
+}
+
+
+
+.text p{
+  font-size: 16px;
+  
+  width: 294px;
+}
+
+
+  .login-part3{
+    
+    padding-top: 30px;
+    
+  }
+
+  
+  .login-flex{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .container{
+    width: 323px;
+    height: 513px;
+  }
+
+  .container .image{
+    background-image: url('/assets/images/Rectangle\ 1mwelcome.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 223px;
+  }
 .containerb {
   max-width: 1280px;
   margin: 0 auto;
@@ -331,9 +414,10 @@ ul li p{
   font-size: 16px;
 
 }
-/* Responsive layout - makes a one column-layout instead of two-column layout */
+/* Responsive layout - makes a one column-layout instead of three-column layout */
 @media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
+
   }
 }
