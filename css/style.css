@@ -297,6 +297,20 @@ h5 {
 
 }
 
+/* adding the faint lines between the items */
+.line1{
+  border: transparent;
+  border-bottom: 1px solid gray;
+  border-right: 1px soild gray;
+}
+
+
+.line2{
+  border: transparent;
+  border-bottom: 1px solid gray;
+  border-right: 1px soild gray;
+}
+
 
 
 .containerb {
