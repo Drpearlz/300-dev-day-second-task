@@ -5,69 +5,89 @@
 
 /* styles here */
 /* universal selector */
-*, *::after, *::before{
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
-body{
+body {
   font-family: sans-serif;
   font-size: 14px;
-  
+  background-color: #f3f3f3;
+}
+h5 {
+  font-size: 14px;
+  line-height: 20px;
+  word-wrap: break-word;
 }
 
 
 /* section-3 login  second-part */
-.hero-container-login{
+.hero-container-login {
   display: grid;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   margin: 0 auto;
-  height: 100vh;
+  height: 1024px;
   background-image:url('/assets/images/Rectangle\ 1login.png');
-  background-size: cover;
+  background-size: fill;
   background-repeat: no-repeat;
-  
+   
 }
-.hero-button{
+.hero-button {
   background-color: white;
   color: black;
   border-radius: 4px;
   padding: 8px 16px;
   margin-top: 20px;
-
   border: none;
 }
-.hero-section{
+.hero-section {
   padding-left: 170px;
   padding-top: 70px;
-  
 }
 
+.hero-section h1 {
 
-
-.hero-section h1{
   font-weight: 800;
   color: white;
   font-size: 82px;
   margin-bottom: 40px;
-  line-height: 99.25px;
 }
 
-
-.hero-section >p{
+.hero-section > p {
   color: white;
   font-size: 24px;
-  line-height: 29.05px;
 }
 
-
-
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .container, .hero-container-login, .right {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .login-flex{
+    padding: 0;
+    flex-direction: column;
+  }
+  .login-part3 {
+    padding: 49px 95px 18px 19px ;
+    max-width: 800px;
+  }
+  .container .text {
+    padding-left: 20px;
+    margin: 20px;
+  }
+}
 /* section 3: third part */
-.login-part3{
-  
-  
-  padding-top:100px;
+
+.login-part3 {
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -76,18 +96,20 @@ body{
   background-color: none;
 }
 
-
-.login-flex{
+.login-flex {
   display: flex;
+  width: 800px;
+  height: 100%;
   gap: 45px;
-  
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
+  width: 100vw;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
 
 
 .container .image{
@@ -98,37 +120,45 @@ body{
   background-size: cover;
 }
 
+.container,
+.right-container {
+  width: 100vw;
+  height: 100vh;
+  align-items: start;
 
 
+}
 
-
-.container .text{
-  
-  text-align: left;
+.container img {
   width: 100%;
-  padding-left: 20px;
 }
 
 
-.container h2{
+.container .text {
+  text-align: start;
+  width: 100%;
+  justify-content: flex-start;
+  padding-left: 20px;
+  flex-direction: column;
+  ;
+}
+
+.container h2 {
   font-size: 24px;
   line-height: 24px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   padding-top: 50px;
 }
 
-
-.container p{
-  text-align: left;
-  
+.container p {
+  align-items: flex-start;
   width: 417px;
   padding-top: 20px;
 }
 
 
-
 /* responsivenes */
-@media (max-width: 375px){
+@media (max-width: 375px){}
   
 .hero-container-login{
   background: url(/assets/images/Rectangle\ 1mobile.png);
@@ -191,7 +221,7 @@ body{
     width: 100%;
     height: 223px;
   }
-}
+
 
 
 
@@ -223,7 +253,7 @@ body{
 }
 
 
-/* items section of the section part 1 */
+/* items section of the section 2 part 1 */
 .items-container{
   width: 1296px;
   height: 573px;
@@ -264,5 +294,211 @@ body{
 
 .items-container .items p{
   width: 289px;
-  
+
+}
+
+
+
+.containerb {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 64px;
+}
+
+.contentb {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  flex: 1 1 0;
+  max-width: 600px;
+  padding: 24px;
+  background: white;
+  box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+.card-header {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  word-wrap: break-word;
+  color: #101828;
+}
+
+.header-subheader {
+  gap: 12px;
+  align-self: stretch;
+}
+
+.header-subheader .subheading {
+  color: #6941c6;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.header-and-text {
+  align-self: stretch;
+  flex-direction: column;
+  padding-top: 12px;
+  align-items: flex-start;
+  gap: 16px;
+  display: flex;
+}
+
+.header-icon {
+  font-size: 24px;
+  display: flex;
+  line-height: 32px;
+  word-wrap: break-word;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-icon .card-header {
+  flex: 1;
+  color: #101828;
+  max-width: 296px;
+}
+
+.header-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.sup-text {
+  color: #667085;
+  font-size: 16px;
+  line-height: 24px;
+  word-wrap: break-word;
+  align-self: stretch;
+}
+
+.card-footer {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  display: flex;
+  padding-top: 64px;
+}
+
+.card-footer img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(0deg, #C7B9DA 0%, #C7B9DA 100%);
+}
+
+.card-footer div {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 0;
+  text-align: start;
+  width: 1344px;
+  height: 709px;
+  padding: 24px 40px;
+  gap: 20px;
+}
+
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 33.33%;
+}
+
+.flex-item-middle {
+  background-color: #1d4ed8;
+  padding: 10px;
+  flex: 33.33%;
+}
+
+.flex-item {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 33.33%;
+}
+
+.flex-item-right {
+  background-color: white;
+  padding: 10px;
+  flex: 33.33%;
+}
+.pc-button{
+  justify-content: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  height: 100%;
+}
+.pc-button .figure{
+  color: #191d23;
+  font-size: 56px;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+.price-cta{
+  border-radius: 4px;
+  padding:  12px 6px;
+  border: 1.5px #1d4ed8 solid;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  display: inline-flex;
+  font-size: 16px;
+  width: 384px;
+  height: 44px;
+  margin-top: 24px;
+
+}
+ul{
+  list-style: none;
+}
+ul li{
+  display: inline-flex;
+  justify-content: center;
+  padding: 8px;
+  align-items: center;
+  gap: 17px;
+}
+ul li p{
+  flex: 1 1 0;
+  color: #a0abbb;
+  font-size: 16px;
+
+}
+/* Responsive layout - makes a one column-layout instead of three-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+
+  }
 }
