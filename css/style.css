@@ -106,7 +106,9 @@ h5 {
 .container {
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
   width: 100vw;
+  height: auto;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -120,14 +122,7 @@ h5 {
   background-size: cover;
 }
 
-.container,
-.right-container {
-  width: 100vw;
-  height: 100vh;
-  align-items: start;
 
-
-}
 
 .container img {
   width: 100%;
@@ -140,7 +135,7 @@ h5 {
   justify-content: flex-start;
   padding-left: 20px;
   flex-direction: column;
-  ;
+  
 }
 
 .container h2 {
@@ -158,7 +153,7 @@ h5 {
 
 
 /* responsivenes */
-@media (max-width: 375px){}
+@media (max-width: 375px){
   
 .hero-container-login{
   background: url(/assets/images/Rectangle\ 1mobile.png);
@@ -222,6 +217,9 @@ h5 {
     height: 223px;
   }
 
+}
+  
+
 
 
 
@@ -255,62 +253,80 @@ h5 {
 
 /* items section of the section 2 part 1 */
 .items-container{
-  width: 1296px;
-  height: 573px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding-left: 278px;
-  gap: 1%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr;
+    row-gap:1px ;
+    column-gap: 1px;
+    height: auto;
+    justify-content: space-evenly;
+    background: #E4E4E7;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 
-
-.items-container .items{
-  width: 330px;
-  height: 217px;
-  display: flex;
-  flex-direction: column;
-  padding: 50px 50px;
-  justify-content: center;
-  align-items: center;
-  
-  
+.user-container-text h1{
+  padding-top: 70px;
 }
 
-
-.items-container .items img{
-  width: 44px;
-  display: block;
-  padding-bottom: 20px;
+.items-container > *{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #fff;
+    
 
 }
 
 
-.items-container .items h2{
+.items-container > * > p,h2{
+  text-align: center;
+  width: 100%;
   padding-bottom: 20px;
 }
 
-.items-container .items p{
-  width: 289px;
+
+.items-container > * > p{
+  font-size: 16px;
+  color: var(--gray-600, #52525B);
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  padding-bottom: 20px;
+  
+}
+
+
+.items-container > * > h2{
+  color: var(--gray-900, #18181B);
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+
+.items-container img{
+  margin-bottom: 30px;
 
 }
 
-/* adding the faint lines between the items */
-.line1{
-  border: transparent;
-  border-bottom: 1px solid gray;
-  border-right: 1px soild gray;
+
+
+/* Responsiveness for the 2nd section part 2 */
+@media(max-width:375px){
+  .items-container{
+    display: flex;
+    flex-direction: column;
+  }
 }
-
-
-.line2{
-  border: transparent;
-  border-bottom: 1px solid gray;
-  border-right: 1px soild gray;
-}
-
 
 
 .containerb {
