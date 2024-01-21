@@ -13,7 +13,7 @@
 body {
   font-family: sans-serif;
   font-size: 14px;
-  background-color: #1e1e1e;
+  background-color: #f3f3f3;
 }
 h5 {
   font-size: 14px;
@@ -24,12 +24,13 @@ h5 {
 .hero-container-login {
   display: grid;
   align-items: center;
-  width: 1080px;
+  width: 100vw;
   margin: 0 auto;
-  height: 100vh;
-  background-image: url("/assets/images/Rectangle\ 1mwelcome.png");
-  background-size: cover;
+  height: 1024px;
+  background-image: url("/assets/images/Rectangle\ 1login.png");
+  background-size: fill;
   background-repeat: no-repeat;
+   
 }
 .hero-button {
   background-color: white;
@@ -37,7 +38,6 @@ h5 {
   border-radius: 4px;
   padding: 8px 16px;
   margin-top: 20px;
-
   border: none;
 }
 .hero-section {
@@ -54,9 +54,31 @@ h5 {
   color: white;
 }
 
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .container, .hero-container-login, .right {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .login-flex{
+    padding: 0;
+    flex-direction: column;
+  }
+  .login-part3 {
+    padding: 49px 95px 18px 19px ;
+    max-width: 800px;
+  }
+  .container .text {
+    padding-left: 20px;
+    margin: 20px;
+  }
+}
 /* section 3: third part */
 .login-part3 {
-  margin-top: 100px;
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -66,19 +88,24 @@ h5 {
 
 .login-flex {
   display: flex;
+  width: 800px;
+  height: 100%;
   gap: 45px;
 }
 
 .container {
   display: flex;
   flex-direction: column;
+  width: 100vw;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .container,
 .right-container {
-  width: 517px;
-  height: 653px;
+  width: 100vw;
+  height: 100vh;
+  align-items: start;
+
 }
 
 .container img {
@@ -86,9 +113,12 @@ h5 {
 }
 
 .container .text {
-  text-align: left;
+  text-align: start;
   width: 100%;
+  justify-content: flex-start;
   padding-left: 20px;
+  flex-direction: column;
+  ;
 }
 
 .container h2 {
@@ -99,8 +129,7 @@ h5 {
 }
 
 .container p {
-  text-align: left;
-
+  align-items: flex-start;
   width: 417px;
   padding-top: 20px;
 }
@@ -223,4 +252,67 @@ h5 {
   justify-content: flex-start;
   align-items: flex-start;
   display: flex;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 0;
+  text-align: start;
+  width: 1344px;
+  height: 709px;
+  padding: 24px 40px;
+  gap: 20px;
+}
+
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 33.33%;
+}
+
+.flex-item-middle {
+  background-color: #1d4ed8;
+  padding: 10px;
+  flex: 33.33%;
+}
+
+.flex-item {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 33.33%;
+}
+
+.flex-item-right {
+  background-color: white;
+  padding: 10px;
+  flex: 33.33%;
+}
+.pc-button .figure{
+  color: #191d23;
+  font-size: 56px;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+.price-cta{
+  border-radius: 4px;
+  padding:  12px 6px;
+  border: 1.5px #1d4ed8 solid;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  display: inline-flex;
+  font-size: 16px;
+  width: 384px;
+  height: 44px;
+
+}
+ul{
+  list-style: none;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
