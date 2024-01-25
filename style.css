@@ -65,9 +65,14 @@ input[type=button]{
 
 /* desktop device */
 @media (min-width:1224px) {
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 .hero .hero_title{
     width: 90%;
     height: 100%;
+    background-color: aquamarine;
     background-image: url(./assets/hero-desk.png);
     background-size: cover;   
     background-repeat: no-repeat;
