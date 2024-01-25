@@ -15,6 +15,7 @@
 body {
   font-family: sans-serif;
   font-size: 14px;
+  overflow-x: hidden;
 }
 h5 {
   font-size: 14px;
@@ -105,7 +106,7 @@ section:not(:last-of-type) {
 /* section 3: third part */
 
 .login-part3 {
-  max-width: 1366px;
+  max-width: 1344px;
   margin: 0 auto;
   display: flex;
   background-color: #fff;
@@ -206,20 +207,21 @@ section:not(:last-of-type) {
 /* section 2: 1st part  */
 .user-container {
   background-color: #fff;
-  max-width: 1366px;
+  max-width: 1344px;
   margin: 0 auto;
 }
 
 .user-container-text {
   text-align: center;
   font-family: 'Plus Jakarta Sans', sans-serif;
+  padding: 10px;
 }
 
 .user-container-text h1 {
   font-weight: 700;
   font-size: 42px;
   line-height: 48px;
-  padding-bottom: 20px;
+  padding: 70px 0 20px;
 }
 
 .user-container-text p {
@@ -236,12 +238,8 @@ section:not(:last-of-type) {
   height: auto;
   justify-content: space-evenly;
   background: #e4e4e7;
-  margin-left: 200px;
-  margin-right: 200px;
-}
-
-.user-container-text h1 {
-  padding-top: 70px;
+  /* margin-left: 200px;
+  margin-right: 200px; */
 }
 
 .items-container > * {
@@ -287,6 +285,10 @@ h2 {
 
 /* Responsiveness for the 2nd section part 2 */
 @media (max-width: 960px) {
+  .user-container-text h1 {
+    font-size: 34px;
+    line-height: 32px;
+  }
   .items-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -297,11 +299,21 @@ h2 {
     justify-content: space-evenly;
     margin: 0;
   }
+
+  .containerb {
+    padding: 20px;
+  }
+  .items-container img {
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 375px) {
   .items-container {
     display: flex;
     flex-direction: column;
+  }
+  .items-container img {
+    margin-bottom: 5px;
   }
 }
 
@@ -310,7 +322,6 @@ h2 {
 .containerb {
   max-width: 1344px;
   margin: 0 auto;
-  padding: 32px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -539,6 +550,12 @@ h2 {
   gap: 17px;
 }
 
+.price-features li img {
+  width: 32px;
+  height: auto;
+  object-fit: contain;
+}
+
 .inactive {
   color: #a0abbb;
 }
@@ -749,5 +766,17 @@ h2 {
 
   .inner-div:nth-child(1) {
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .features2-container {
+    padding: 0;
+  }
+  .features2-container h3 {
+    font-size: 30px;
+  }
+  .inner-container {
+    padding: 10px;
   }
 }
