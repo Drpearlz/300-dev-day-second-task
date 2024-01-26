@@ -23,93 +23,92 @@ h5 {
   word-wrap: break-word;
 }
 
-
 section:not(:last-of-type) {
   background-color: #f3f3f3;
 }
 /* login page section 3 part 1 */
-.hero{
+.hero {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  max-height: 100vh;
+  /* align-items: center; */
 }
 .hero .hero_title {
-  width: 369px;
-  height: 398px;
+  /* width: 369px; */
+  height: 50vh;
   position: relative;
   background-image: url(/assets/images/Rectangle\ 1.png);
   background-size: cover;
-
 }
-.hero_title h1{
- position: absolute;
- font-size: 32px;
- left: 20px;
- bottom: 100px;
- color: white;
+.hero_title h1 {
+  position: absolute;
+  font-size: 32px;
+  left: 20px;
+  bottom: 100px;
+  color: white;
 }
-.hero h3{
+.hero h3 {
   font-size: 24px;
   padding: 10px 1px;
 }
-.hero p{
-  padding-bottom: 30px ;
+.hero p {
+  padding-bottom: 30px;
+  font-size: 16px;
+  font-weight: 700;
 }
-.hero button{
+.hero button {
   position: absolute;
   padding: 10px;
-  bottom:50px ;
+  bottom: 50px;
   left: 20px;
 }
-form{
-  width: 360px;
-  height: 459;
+form {
+  height: 50vh;
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-
-}
-input[type=email]{
-  padding: 10px 12px;
-}
-input[type=password]{
-  padding: 10px 12px;
-}
-input[type=button]{
-  padding:10px 12px;
-  background: #1E1E1E;
-  color: white;
+  padding: 20px;
 }
 
+form input {
+  border-radius: 5px;
+  border: none;
+  padding: 10px 12px;
+}
+
+input[type='button'] {
+  background-color: #18181b;
+  color: #ffffff;
+}
 
 /* desktop device */
-@media (min-width:1224px) {
-.hero{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.hero .hero_title{
-  width: 90%;
-  height: 100%;
-  background-color: aquamarine;
-  background-image: url(/assets/images/Rectangle\ 1welcome.png);
-  background-size: cover;   
-  background-repeat: no-repeat;
-}
+@media (min-width: 960px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+  }
+  .hero .hero_title {
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    background-image: url(/assets/images/Rectangle\ 1welcome.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
-form {
-  width: 50%;
-  height: 150%;
-  margin: 100px;
-}
+  form {
+    width: 50%;
+    height: 150%;
+    margin: 100px;
+  }
 
-h1{
-  font-size: 53px;
-}
+  h1 {
+    font-size: 53px;
+  }
 
-h3{
-  font-size: 30px;
-}
+  h3 {
+    font-size: 30px;
+  }
 }
 
 /* section-3 login  second-part */
